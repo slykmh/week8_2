@@ -32,7 +32,7 @@ node(POD_LABEL) {
                 ./gradlew acceptanceTest -Dcalculator.url=http://calculator-service:8080
                 '''
                 publishHTML (target: [
-                  reportDir: 'sample3/build/reports/AcceptanceTest',
+                  reportDir: 'sample3',
                   reportFiles: 'main.html',
                   reportName: "Acceptance Test"
                 ]) 
