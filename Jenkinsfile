@@ -31,7 +31,11 @@ node(POD_LABEL) {
                 chmod +x gradlew
                 ./gradlew acceptanceTest -Dcalculator.url=http://calculator-service:8080
                 '''
-              } catch (Exception E) {
+                publishHTML (target: [
+                  reportDir: 'sample3/build/reports/AcceptanceTest',
+                  reportFiles: 'main.html',
+                  reportName: "Acceptance Test"              
+               } catch (Exception E) {
                   echo 'Failure detected'
           }
       }
