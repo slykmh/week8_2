@@ -29,7 +29,7 @@ node(POD_LABEL) {
                 sh '''
                 cd Chapter09/sample3
                 chmod +x gradlew
-                ./gradlew test
+                ./gradlew acceptanceTest -Dcalculator.url=http://calculator-service:8080
                 '''
               } catch (Exception E) {
                   echo 'Failure detected'
