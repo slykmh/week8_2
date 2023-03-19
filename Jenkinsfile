@@ -36,7 +36,7 @@ node(POD_LABEL) {
               }
               publishHTML (target: [
                   reportDir: 'Chapter09/sample3',
-                  reportFiles: 'main.html',
+                  reportFiles: 'index.html',
                   reportName: "Acceptance Test"
                 ])
       }
