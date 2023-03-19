@@ -34,7 +34,8 @@ node(POD_LABEL) {
                 publishHTML (target: [
                   reportDir: 'sample3/build/reports/AcceptanceTest',
                   reportFiles: 'main.html',
-                  reportName: "Acceptance Test"              
+                  reportName: "Acceptance Test"
+                ]) 
                } catch (Exception E) {
                   echo 'Failure detected'
           }
