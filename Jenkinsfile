@@ -30,6 +30,8 @@ node(POD_LABEL) {
                 cd Chapter09/sample3
                 chmod +x gradlew
                 ./gradlew acceptanceTest -Dcalculator.url=http://calculator-service:8080
+                ./gradlew jacocoTestReport
+                ./gradlew jacocoTestCoverageVerification
                 '''
                } catch (Exception E) {
                   echo 'Failure detected'
